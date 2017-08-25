@@ -497,3 +497,44 @@ h6 {
   display: block;
   border-radius: 20px;
   max-width: 100%; }
+
+/* line 1, ../sass/modules/_backgrounds.scss */
+.background {
+  color: #EEE8D6;
+  margin: 20px 0;
+  width: 100%;
+  display: table; }
+  /* line 7, ../sass/modules/_backgrounds.scss */
+  .background .container {
+    display: table-cell;
+    vertical-align: bottom;
+    padding-bottom: 20px; }
+    /* line 12, ../sass/modules/_backgrounds.scss */
+    .background .container h1 {
+      color: #FFBA00;
+      font-family: Merriweather, Helvetica, sans-serif;
+      font-size: 5rem;
+      line-height: 105%;
+      margin-bottom: 0;
+      padding: 0 10%; }
+    /* line 21, ../sass/modules/_backgrounds.scss */
+    .background .container p {
+      padding: 0 10%;
+      margin-top: 0; }
+
+/* line 28, ../sass/modules/_backgrounds.scss */
+.jumbotron {
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)), url("../images/yosemite2011-4.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 600px;
+  margin-top: 0; }
+
+/* line 35, ../sass/modules/_backgrounds.scss */
+.bridge {
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)), url("../images/yosemite2011-4.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 300px; }
