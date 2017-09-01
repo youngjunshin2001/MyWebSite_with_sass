@@ -363,7 +363,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: Merriweather, Helvetica, sans-serif;
   color: #022933;
   background-color: #EEE8D6; }
@@ -458,163 +458,132 @@ h6 {
       margin-top: 0; }
 
 .jumbotron {
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)), url("../images/yosemite2011-4.jpg");
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)), url("../images/water.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 500px;
+  height: 600px;
   margin-top: 0; }
 
 .bridge {
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)), url("../images/yosemite2011-4.jpg");
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)), url("../images/bridge.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   height: 300px; }
 
-.row.match-my-cols {
-  overflow: hidden; }
-
-.row.match-my-cols [class*="col-"] {
-  margin-bottom: -99999px;
-  padding-bottom: 99999px; }
-
-/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
-.row.content {
-  height: 100%; }
-
-/* Set gray background color and 100% height */
-.sidenav {
-  background-color: lightcyan;
-  height: 100%; }
-
-/* Set black background color, white text and some padding */
-footer {
-  background-color: #555;
-  color: white;
-  padding: 15px; }
-
-/* On small screens, set height to 'auto' for sidenav and grid */
-@media screen and (max-width: 767px) {
-  .sidenav {
-    height: auto;
-    padding: 15px; }
-
-  .row.content {
-    height: auto; } }
-.mymedia {
+.media {
   margin: 0;
   padding: 0;
   list-style: none; }
-  .mymedia .item {
+  .media .item {
     padding-bottom: 10px;
     padding-top: 10px;
     padding-left: 10px;
     border-top: 1px dotted #D14348; }
-    .mymedia .item:hover {
+    .media .item:hover {
       background: #FFBA00; }
-    .mymedia .item:last-of-type {
+    .media .item:last-of-type {
       border-bottom: 1px dotted #D14348; }
-    .mymedia .item:before, .mymedia .item:after {
+    .media .item:before, .media .item:after {
       content: '';
       display: table; }
-    .mymedia .item:after {
+    .media .item:after {
       clear: both; }
-  .mymedia .head {
+  .media .head {
     margin: 0;
     padding: 0;
     color: #0076A3;
     font-size: 2rem; }
-    #typography .mymedia .head {
+    #typography .media .head {
       color: #D14348; }
-  .mymedia p {
+  .media p {
     margin: 0;
     font-size: 1.5rem; }
-  .mymedia img {
+  .media img {
     float: left;
     margin-right: 10px; }
-  .mymedia a {
+  .media a {
     text-decoration: none;
     color: #022933; }
 
-.mytable {
+.table {
   font-size: 1.5rem;
   text-align: left;
   width: 100%; }
-  .mytable caption {
+  .table caption {
     font-size: 2.5rem;
     text-align: left;
     padding-bottom: 5px; }
-  .mytable > thead > tr:hover,
-  .mytable > tbody > tr:hover,
-  .mytable > tfoot > tr:hover {
+  .table > thead > tr:hover,
+  .table > tbody > tr:hover,
+  .table > tfoot > tr:hover {
     background-color: #dfc5b2; }
-  .mytable > thead > tr:nth-child(even),
-  .mytable > tbody > tr:nth-child(even),
-  .mytable > tfoot > tr:nth-child(even) {
+  .table > thead > tr:nth-child(even),
+  .table > tbody > tr:nth-child(even),
+  .table > tfoot > tr:nth-child(even) {
     background-color: rgba(255, 186, 0, 0.2); }
-    .mytable > thead > tr:nth-child(even):hover,
-    .mytable > tbody > tr:nth-child(even):hover,
-    .mytable > tfoot > tr:nth-child(even):hover {
+    .table > thead > tr:nth-child(even):hover,
+    .table > tbody > tr:nth-child(even):hover,
+    .table > tfoot > tr:nth-child(even):hover {
       background-color: rgba(255, 186, 0, 0.5); }
-  .mytable > thead > tr > th,
-  .mytable > thead > tr > td,
-  .mytable > tbody > tr > th,
-  .mytable > tbody > tr > td,
-  .mytable > tfoot > tr > th,
-  .mytable > tfoot > tr > td {
+  .table > thead > tr > th,
+  .table > thead > tr > td,
+  .table > tbody > tr > th,
+  .table > tbody > tr > td,
+  .table > tfoot > tr > th,
+  .table > tfoot > tr > td {
     padding: 10px;
     border-bottom: 1px dotted #0076A3; }
-  .mytable > thead > tr {
+  .table > thead > tr {
     background-color: #0076A3;
     color: #EEE8D6; }
-    .mytable > thead > tr:hover {
+    .table > thead > tr:hover {
       background-color: #a32d00; }
-    .mytable > thead > tr > th {
+    .table > thead > tr > th {
       border-bottom: 0; }
 
-.dropdown-submenu {
-  position: relative; }
-
-.dropdown-submenu > .dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  -webkit-border-radius: 0 6px 6px 6px;
-  -moz-border-radius: 0 6px 6px;
-  border-radius: 0 6px 6px 6px;
-  background-color: lightblue; }
-
-.dropdown-submenu:hover > .dropdown-menu {
-  display: block; }
-
-.dropdown-submenu > a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: black;
-  margin-top: 5px;
-  margin-right: -10px; }
-
-.dropdown-submenu:hover > a:after {
-  border-left-color: #bbb; }
-
-.dropdown-submenu.pull-left {
-  float: none; }
-
-.dropdown-submenu.pull-left > .dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  -webkit-border-radius: 6px 0 6px 6px;
-  -moz-border-radius: 6px 0 6px 6px;
-  border-radius: 6px 0 6px 6px; }
-
-ul.nav li.dropdown:hover > ul.dropdown-menu {
-  display: block;
-  background-color: lightblue; }
+header nav {
+  background-color: #003f57; }
+nav .branding {
+  float: left;
+  display: none; }
+  @media (min-width: 1000px) {
+    nav .branding {
+      display: block; } }
+nav .branding h1 {
+  font-size: 2.75rem;
+  overflow: hidden;
+  margin: 0;
+  color: #FFBA00; }
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  nav ul:before, nav ul:after {
+    content: '';
+    display: table; }
+  nav ul:after {
+    clear: both; }
+nav ul li {
+  padding: 10px 5px; }
+  @media (min-width: 760px) {
+    nav ul li {
+      float: right; } }
+nav ul li a {
+  text-decoration: none;
+  padding: 10px 5px;
+  color: #EEE8D6; }
+  nav ul li a:hover {
+    color: #FFBA00; }
+  header nav ul li a:hover {
+    background-color: #002c3d; }
+  footer nav ul li a {
+    color: white; }
+footer nav {
+  margin-top: 20px;
+  min-height: 200px;
+  background-color: #003f57; }
+  @media (min-width: 0) and (max-width: 500px) {
+    footer nav {
+      display: none; } }
