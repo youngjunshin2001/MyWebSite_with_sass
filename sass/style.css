@@ -502,6 +502,10 @@ footer {
 
   .row.content {
     height: auto; } }
+.row.no-margin-row {
+  margin-right: 0px;
+  margin-left: 0px; }
+
 .mymedia {
   margin: 0;
   padding: 0;
@@ -618,3 +622,19 @@ footer {
 ul.nav li.dropdown:hover > ul.dropdown-menu {
   display: block;
   background-color: lightblue; }
+
+#accordion .panel-heading {
+  background-color: darkcyan; }
+  #accordion .panel-heading a {
+    text-decoration: none;
+    font-size: 16px; }
+    #accordion .panel-heading a:hover {
+      color: greenyellow; }
+
+#accordion .panel-body {
+  padding: 10px; }
+  #accordion .panel-body a {
+    text-decoration: none;
+    padding-left: 8px; }
+    #accordion .panel-body a:hover {
+      color: coral; }

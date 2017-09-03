@@ -560,7 +560,7 @@ h6 {
   height: 100%; }
 
 /* Set black background color, white text and some padding */
-/* line 60, ../sass/modules/_backgrounds.scss */
+/* line 72, ../sass/modules/_backgrounds.scss */
 footer {
   background-color: #555;
   color: white;
@@ -568,14 +568,19 @@ footer {
 
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
-  /* line 68, ../sass/modules/_backgrounds.scss */
+  /* line 80, ../sass/modules/_backgrounds.scss */
   .sidenav {
     height: auto;
     padding: 15px; }
 
-  /* line 72, ../sass/modules/_backgrounds.scss */
+  /* line 84, ../sass/modules/_backgrounds.scss */
   .row.content {
     height: auto; } }
+/* line 87, ../sass/modules/_backgrounds.scss */
+.row.no-margin-row {
+  margin-right: 0px;
+  margin-left: 0px; }
+
 /* line 4, ../sass/modules/_media.scss */
 .mymedia {
   margin: 0;
@@ -720,3 +725,25 @@ footer {
 ul.nav li.dropdown:hover > ul.dropdown-menu {
   display: block;
   background-color: lightblue; }
+
+/* line 57, ../sass/modules/_navigation.scss */
+#accordion .panel-heading {
+  background-color: darkcyan; }
+  /* line 59, ../sass/modules/_navigation.scss */
+  #accordion .panel-heading a {
+    text-decoration: none;
+    font-size: 16px; }
+    /* line 62, ../sass/modules/_navigation.scss */
+    #accordion .panel-heading a:hover {
+      color: greenyellow; }
+
+/* line 68, ../sass/modules/_navigation.scss */
+#accordion .panel-body {
+  padding: 10px; }
+  /* line 70, ../sass/modules/_navigation.scss */
+  #accordion .panel-body a {
+    text-decoration: none;
+    padding-left: 8px; }
+    /* line 73, ../sass/modules/_navigation.scss */
+    #accordion .panel-body a:hover {
+      color: coral; }
