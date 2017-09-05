@@ -408,7 +408,7 @@ body {
   font-size: 1.6rem;
   font-family: Merriweather, Helvetica, sans-serif;
   color: #022933;
-  background-color: #EEE8D6; }
+  background-color: #FFFFFF; }
 
 /* line 14, ../sass/_base.scss */
 .container {
@@ -455,7 +455,7 @@ h6 {
   border-radius: 4px;
   font-family: "Bree Serif", Helvetica, sans-serif;
   user-select: none;
-  color: #EEE8D6; }
+  color: #FFFFFF; }
 
 /* line 26, ../sass/_interface.scss */
 .btn-default {
@@ -500,7 +500,7 @@ h6 {
 
 /* line 1, ../sass/modules/_backgrounds.scss */
 .background {
-  color: #EEE8D6;
+  color: #FFFFFF;
   margin: 20px 0;
   width: 100%;
   display: table; }
@@ -559,8 +559,33 @@ h6 {
   background-color: lightcyan;
   height: 100%; }
 
-/* Set black background color, white text and some padding */
+/* line 60, ../sass/modules/_backgrounds.scss */
+.mytext > p {
+  background-color: antiquewhite;
+  border-bottom-style: solid;
+  border-bottom-width: thick;
+  border-bottom-color: cadetblue;
+  text-decoration: none;
+  padding: 10px; }
+  /* line 67, ../sass/modules/_backgrounds.scss */
+  .mytext > p:hover {
+    background-color: #ECEAEA; }
+
 /* line 72, ../sass/modules/_backgrounds.scss */
+.mycontainer {
+  background-color: antiquewhite;
+  border-bottom-style: solid;
+  border-bottom-width: thick;
+  border-bottom-color: cadetblue;
+  text-decoration: none;
+  padding: 0px;
+  margin-bottom: 5px; }
+  /* line 80, ../sass/modules/_backgrounds.scss */
+  .mycontainer p {
+    padding: 10px; }
+
+/* Set black background color, white text and some padding */
+/* line 90, ../sass/modules/_backgrounds.scss */
 footer {
   background-color: #555;
   color: white;
@@ -568,15 +593,15 @@ footer {
 
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
-  /* line 80, ../sass/modules/_backgrounds.scss */
+  /* line 98, ../sass/modules/_backgrounds.scss */
   .sidenav {
     height: auto;
     padding: 15px; }
 
-  /* line 84, ../sass/modules/_backgrounds.scss */
+  /* line 102, ../sass/modules/_backgrounds.scss */
   .row.content {
     height: auto; } }
-/* line 87, ../sass/modules/_backgrounds.scss */
+/* line 105, ../sass/modules/_backgrounds.scss */
 .row.no-margin-row {
   margin-right: 0px;
   margin-left: 0px; }
@@ -641,7 +666,7 @@ footer {
   .mytable > thead > tr:hover,
   .mytable > tbody > tr:hover,
   .mytable > tfoot > tr:hover {
-    background-color: #dfc5b2; }
+    background-color: #e6e6e6; }
   /* line 23, ../sass/modules/_tables.scss */
   .mytable > thead > tr:nth-child(even),
   .mytable > tbody > tr:nth-child(even),
@@ -664,7 +689,7 @@ footer {
   /* line 38, ../sass/modules/_tables.scss */
   .mytable > thead > tr {
     background-color: #0076A3;
-    color: #EEE8D6; }
+    color: #FFFFFF; }
     /* line 41, ../sass/modules/_tables.scss */
     .mytable > thead > tr:hover {
       background-color: #a32d00; }

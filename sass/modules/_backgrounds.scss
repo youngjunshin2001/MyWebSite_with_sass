@@ -56,13 +56,31 @@
   height: 100%;
 }
 
-
-
-
-
-
-
-
+		    
+.mytext>p {
+		background-color: antiquewhite;
+	    border-bottom-style: solid;
+	    border-bottom-width: thick;
+	    border-bottom-color: cadetblue;
+		text-decoration: none;
+		padding: 10px;
+	&:hover {
+			background-color: #ECEAEA
+		}  
+	  }
+	
+.mycontainer {
+		background-color: antiquewhite;
+	    border-bottom-style: solid;
+	    border-bottom-width: thick;
+	    border-bottom-color: cadetblue;
+		text-decoration: none;
+		padding: 0px;
+	    margin-bottom: 5px;
+		p {
+		padding: 10px;	
+		}
+}
 
 
 

@@ -366,7 +366,7 @@ body {
   font-size: 1.6rem;
   font-family: Merriweather, Helvetica, sans-serif;
   color: #022933;
-  background-color: #EEE8D6; }
+  background-color: #FFFFFF; }
 
 .container {
   width: 80%;
@@ -404,7 +404,7 @@ h6 {
   border-radius: 4px;
   font-family: "Bree Serif", Helvetica, sans-serif;
   user-select: none;
-  color: #EEE8D6; }
+  color: #FFFFFF; }
 
 .btn-default {
   background-color: #022933; }
@@ -438,7 +438,7 @@ h6 {
   max-width: 100%; }
 
 .background {
-  color: #EEE8D6;
+  color: #FFFFFF;
   margin: 20px 0;
   width: 100%;
   display: table; }
@@ -487,6 +487,27 @@ h6 {
 .sidenav {
   background-color: lightcyan;
   height: 100%; }
+
+.mytext > p {
+  background-color: antiquewhite;
+  border-bottom-style: solid;
+  border-bottom-width: thick;
+  border-bottom-color: cadetblue;
+  text-decoration: none;
+  padding: 10px; }
+  .mytext > p:hover {
+    background-color: #ECEAEA; }
+
+.mycontainer {
+  background-color: antiquewhite;
+  border-bottom-style: solid;
+  border-bottom-width: thick;
+  border-bottom-color: cadetblue;
+  text-decoration: none;
+  padding: 0px;
+  margin-bottom: 5px; }
+  .mycontainer p {
+    padding: 10px; }
 
 /* Set black background color, white text and some padding */
 footer {
@@ -552,7 +573,7 @@ footer {
   .mytable > thead > tr:hover,
   .mytable > tbody > tr:hover,
   .mytable > tfoot > tr:hover {
-    background-color: #dfc5b2; }
+    background-color: #e6e6e6; }
   .mytable > thead > tr:nth-child(even),
   .mytable > tbody > tr:nth-child(even),
   .mytable > tfoot > tr:nth-child(even) {
@@ -571,7 +592,7 @@ footer {
     border-bottom: 1px dotted #0076A3; }
   .mytable > thead > tr {
     background-color: #0076A3;
-    color: #EEE8D6; }
+    color: #FFFFFF; }
     .mytable > thead > tr:hover {
       background-color: #a32d00; }
     .mytable > thead > tr > th {
