@@ -1,0 +1,280 @@
+
+/*background*/
+.background {
+	color: $color-backgrounds;
+	margin: 20px 0;
+	width: 100%;
+	display: table;
+
+	.container {
+		display: table-cell;
+		vertical-align: bottom;
+		padding-bottom: 20px;
+
+		h1 {
+			color: $yellow;
+			font-family: $font-main;
+			font-size: 5rem;
+			line-height: 105%;
+			margin-bottom: 0;
+			padding: 0 10%;
+		}
+
+		p {
+			padding: 0 10%;
+			margin-top: 0;
+		}
+	}
+}
+
+.jumbotron {
+	@include backImage(
+		'../images/yosemite2011-4.jpg',
+		500px);
+	margin-top: 0;
+}
+
+.bridge {
+	@include backImage(
+		'../images/yosemite2011-4.jpg',
+		300px, center center);
+}
+
+.row.match-my-cols {
+	overflow: hidden; 
+}
+
+.row.match-my-cols [class*="col-"]{
+	margin-bottom: -99999px;
+	padding-bottom: 99999px;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+.row.content {height: 100%}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  background-color: lightcyan;
+  height: 100%;
+}
+
+		    
+.mytext>p {
+		background-color: antiquewhite;
+	    border-bottom-style: solid;
+	    border-bottom-width: thick;
+	    border-bottom-color: cadetblue;
+		text-decoration: none;
+		padding: 10px;
+	&:hover {
+			background-color: #ECEAEA
+		}  
+	  }
+	
+.mycontainer {
+		background-color: antiquewhite;
+	    border-bottom-style: solid;
+	    border-bottom-width: thick;
+	    border-bottom-color: cadetblue;
+		text-decoration: none;
+		padding: 0px;
+	    margin-bottom: 5px;
+		p {
+		padding: 10px;	
+		}
+}
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+	height: auto;
+	padding: 15px;
+  }
+  .row.content {height: auto;} 
+}
+
+.row.no-margin-row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+/*navigation*/
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+	background-color: lightblue
+	
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: black;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #bbb;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block; 
+    background-color: lightblue;
+}
+
+#accordion .panel-heading {
+  background-color: darkcyan;
+	a {
+		text-decoration: none;
+		font-size: 16px;
+		&:hover {
+			color: greenyellow;
+		}
+	}
+}
+
+#accordion .panel-body {
+	padding: 10px;
+	a {
+		text-decoration: none;
+		padding-left: 8px;
+		&:hover {
+			color:coral;
+		}
+	}
+	
+}
+
+/*tables*/
+$color-even-cells: transparentize($yellow, .8);
+
+.mytable {
+  font-size: 1.5rem;
+  text-align: left;
+  width: 100%;
+
+  caption {
+    font-size: 2.5rem;
+    text-align: left;
+    padding-bottom: 5px;
+  }
+
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+
+      &:hover {
+        background-color: darken(adjust-hue($color-backgrounds, -20deg), 10%);
+      }
+
+      &:nth-child(even) {
+        background-color: $color-even-cells;
+
+        &:hover {
+          background-color: opacify($color-even-cells, .3);
+        }
+      }
+      > th,
+      > td {
+        padding: 10px;
+        border-bottom: 1px dotted $blue;
+      }
+    }
+  }
+
+  >thead >tr {
+    background-color: $blue;
+    color: $color-backgrounds;
+    &:hover {
+      background-color: complement($blue);
+    }
+    >th {
+      border-bottom :0;
+    }
+  }
+}
+
+/*media*/
+.mymedia {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .item {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-top: 1px dotted $color-item-border;
+    &:hover {
+      background: $yellow;
+    }
+    &:last-of-type {
+      border-bottom: 1px dotted $color-item-border;
+    }
+    @include clearfix;
+  }
+
+  .head {
+    margin: 0;
+    padding: 0;
+    color: $color-media-head;
+    font-size: 2rem;
+    #typography & {
+      color: $red;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  img {
+    float: left;
+    margin-right: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-main;
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "youngjunshin",
+  "version": "1.0.0",
+  "description": "my website training",
+  "main": "index.js",
+  "dependencies": {
+  	"grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-compass": "~0.5.0",
+    "grunt-contrib-uglify": "~0.2.2",
+    "matchdep": "~0.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youngjunshin2001/MyWebSite_with_sass.git"
+  },
+  "author": "Young-Jun Shin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/youngjunshin2001/MyWebSite_with_sass/issues"
+  },
+  "homepage": "https://github.com/youngjunshin2001/MyWebSite_with_sass#readme"
+}
